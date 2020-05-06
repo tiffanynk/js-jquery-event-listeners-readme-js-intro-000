@@ -13,11 +13,16 @@ function frameIt() {
 function pressIt() {
   $('#typing').on('keydown', function(event) {
     if (event.which === 71) {
-      alert("You Pressed G!");
+      alert('You Pressed G!');
     }
   })
 }
 
+function submitIt() {
+  $('form').on('submit', function() {
+    alert('Your form is going to be submitted now.');
+  });
+}
 
 $(document).ready(function(){
 
