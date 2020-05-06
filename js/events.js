@@ -7,12 +7,21 @@ function getIt() {
 function frameIt() {
   $('img').on('load', function() {
     $('img').addClass('tasty');
-  })
+  });
 }
+
+function pressIt() {
+    $('#typing').keydown(function(event) {
+      alert('You pressed G!')
+    });
+}
+
 $(document).ready(function(){
 
 getIt();
 
 frameIt();
+
+pressIt();
 
 });
