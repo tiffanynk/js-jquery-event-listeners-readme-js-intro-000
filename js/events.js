@@ -11,7 +11,7 @@ function frameIt() {
 }
 
 function pressIt() {
-  input.addEventListener("keydown", event => {
+  $(form#typing).addEventListener("keydown", event => {
     if (event.keyCode === 71) {
       alert('You pressed G!');
     }
