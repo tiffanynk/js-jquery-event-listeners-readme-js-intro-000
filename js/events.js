@@ -11,11 +11,11 @@ function frameIt() {
 }
 
 function pressIt() {
-    $('#typing').keydown(function(event) {
-      if (event.key === 'KeyG') {
-        alert('You pressed G!')
-      }
-    });
+  $('input').addEventListener("keydown", event => {
+    if (event.keyCode === 71) {
+      return ('You pressed G!');
+    }
+  })
 }
 
 $(document).ready(function(){
