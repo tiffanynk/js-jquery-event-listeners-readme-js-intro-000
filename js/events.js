@@ -13,7 +13,7 @@ function frameIt() {
 function pressIt() {
   input.addEventListener("keydown", event => {
     if (event.keyCode === 71) {
-      return ('You pressed G!');
+      alert('You pressed G!');
     }
   })
 }
