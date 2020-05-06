@@ -31,4 +31,6 @@ frameIt();
 
 pressIt();
 
+submitIt();
+
 });
